@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script src="src/index.js" defer></script>
+  </head>
+
+  <body>
+		<table>
+			<thead>
+				<tr><th>Username</th><th>Email</th><th>Address</th><th>Admin</th><th>Image</th></tr>
+			</thead>
+			<tbody id="tbody">
+					<tr id="Person1"><td>Person1</td><td>person1@email.com</td><td>Street1</td><td>X</td></tr>
+					<tr id="Person2"><td >Person2</td><td>person2@email.com</td><td>Street2</td><td>-</td></tr>
+					<tr id="Person3"><td >Person3</td><td>person3@email.com</td><td>Street3</td><td>-</td></tr>
+					<tr id="Person4"><td >Person4</td><td>person4@email.com</td><td>Street4</td><td>-</td></tr>
+			</tbody>
+		</table>	
+
+		<form action="" method="GET">
+			<fieldset>
+				<legend>Information</legend>
+
+					<label for="input-username">Username</label>
+					<input type="text" name="input-username" id="input-username"></input>
+					<br>
+					<label for="input-email">Email</label>
+					<input type="text" name="input-email" id="input-email"></input>
+          <br>
+					<label for="input-address">Address</label>
+					<input type="text" name="input-address" id="input-address"></input>
+          <br>
+					<label for="input-admin">Admin</label>
+					<input type="checkbox" name="input-admin" id="input-admin"></input>
+					<br>
+					<label for="input-image">Image</label>
+					<input type="file" name="input-image" id="input-image"  accept="image/*"></input>
+			</fieldset>
+			<input type="button" id="submit-data" value="Submit"></input>
+      <input type="button" id="empty-table" value="Empty Table"></input>
+		</form>
+	</body>
+</html>
